@@ -178,7 +178,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             color: white;
         }
 
-
         .error-message {
             background: linear-gradient(to bottom, #ffcccc, #ff9999);
             padding: 10px;
