@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $resultado_obtenido = $stmt->get_result();
 
-    if ($resultado_obtenido->num_rows === 1) { // acá el 1 significa que si encuentra un resultado o que 1 significa que si encontro algo?, tipo true o false o algo asi o on off xd
+    if ($resultado_obtenido->num_rows === 1) {
         $usuario_datos = $resultado_obtenido->fetch_assoc();
 
         if (password_verify($password_ingresada, $usuario_datos['password']) == true) {
@@ -60,7 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             padding: 0;
         }
 
-        /* Usamos el mismo fondo de la Pokédex */
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: #ffcb05;
@@ -70,8 +69,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             min-height: 100vh;
             color: #333;
             display: flex;
-            align-items: center; /* Centra la tarjeta verticalmente */
-            justify-content: center; /* Centra la tarjeta horizontalmente */
+            align-items: center;
+            justify-content: center;
             padding: 20px;
         }
 
