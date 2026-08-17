@@ -104,7 +104,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             width: 100%;
             max-width: 600px;
             margin: auto;
-            margin-top: -1px;
+            margin-top: 50px;
             zoom: 1.1;
             border-radius: 10px;
             border: 4px solid #695b0c;
