@@ -62,36 +62,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #ffcb05;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-            background-size: 30px 30px;
-            background-attachment: fixed;
+            background-image: url(assets/img/fondos/login-fondo.jpg);
             min-height: 100vh;
-            color: #333;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
+            color: #333;
+            background-size: cover;
+            background-position: center;
         }
 
         .login-card {
-            background-color: white;
-            border: 3px solid #1c477a;
-            border-radius: 15px;
-            box-shadow: 0px 7px 0px #1c477a, 0px 10px 20px rgba(0, 0, 0, 0.4);
-            padding: 40px 30px;
+            background-color: #dac29d;
+            border: 4px solid #5a320e;
+            border-radius: 10px;
+            box-shadow: 0px 7px 0px #5a320e, 0px 10px 50px 10px #00000085;
+            padding: 45px 40px;
             width: 100%;
             max-width: 500px;
+            zoom: 1.3;
+            background: linear-gradient(180deg, #e8d0ab 60%, #e8e2d8 80%);
+            background-color: #e8d0ab;
+            margin: auto;
+            margin-top: 90px;
             text-align: center;
         }
 
         .login-card h2 {
             font-size: 35px;
-            color: #316eb5;
+            color: #5a320e;
             text-transform: uppercase;
             font-weight: 900;
             margin-bottom: 25px;
-            text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+            text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2), 0.7px 0px 0px white;
+            text-decoration: underline;
+            font-family: 'Montserrat';
         }
 
         .form-group {
@@ -101,19 +104,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         .form-group label {
             font-weight: 700;
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 8px;
+            font-size: 15px;
+            color: #5a320e;
+            margin-bottom: 5px;
             display: block;
             text-transform: uppercase;
+            font-family: 'Montserrat';
+            text-shadow: 0.5px 0px 0px #5a320e;
         }
 
         .form-group input {
             width: 100%;
-            border: 2px solid #757575;
+            border: 2px solid #5a320e;
             border-radius: 7px;
-            font-size: 17px;
-            box-shadow: 0px 5px 0px rgb(84 74 74 / 88%);
+            font-size: 15px;
+            box-shadow: 0px 5px 0px rgb(90 50 14);
             padding: 10px 15px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
@@ -126,8 +131,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         .form-group input:focus {
             outline: none;
-            border-color: #316eb5;
-            box-shadow: 0px 5px 0px #316eb5;
+            border-color: #5a320e;
+            box-shadow: 0px 5px 0px #5a320e;
         }
 
         .btn-submit {
@@ -141,13 +146,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             cursor: pointer;
             text-transform: uppercase;
             font-size: 20px;
-            background: linear-gradient(to top, #4b8edb, #316eb5 40%);
-            box-shadow: 0px 5px 0px #1c477a;
+            background: linear-gradient(to top, #dac29d69, #5a320e 50%);
+            box-shadow: 0px 5px 0px #5a320e;
             border: 1px solid #ffffff75;
             text-shadow: 0px 3px 0px black, 0px 0px 15px #ffffffa8;
             margin-top: 10px;
             margin-bottom: 20px;
             transition: transform 0.1s, filter 0.2s;
+            background-color: #5a320e;
         }
 
         .btn-submit:hover {
@@ -156,7 +162,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         .btn-back {
-            display: inline-block;
             padding: 10px 20px;
             margin-top: 15px;
             text-decoration: none;
@@ -168,8 +173,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background: linear-gradient(to bottom, #868e96, #6c757d);
             box-shadow: 0px 5px 0px #495057;
             border: 1px solid #ffffff30;
-            text-shadow: 0px 2px 0px black;
+            text-shadow: 0px 2px 0px black, 0px 0px 15px #ffffff9e;
             transition: transform 0.1s, filter 0.2s, box-shadow 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 250px;
+            margin: auto;
         }
 
         .btn-back:hover {
