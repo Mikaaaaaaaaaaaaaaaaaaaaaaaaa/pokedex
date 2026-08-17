@@ -65,13 +65,12 @@ if (empty($busqueda) == false) {
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #ffcb05;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-            background-size: 30px 30px;
-            background-attachment: fixed;
+            background-image: url(assets/img/fondos/index-fondo.jpg);
             min-height: 100vh;
             padding: 20px;
             color: #333;
+            background-size: cover;
+            background-position: center;
         }
 
         h1.titulo-pokedex {
@@ -224,7 +223,7 @@ if (empty($busqueda) == false) {
         }
 
         .pokemon-card {
-            background: linear-gradient(180deg, #ffca00 60%, #fde381);
+            background: linear-gradient(180deg, #ffca00 60%, #f1fd3b);
             border: 3px solid #cc9900;
             border-radius: 15px;
             box-shadow: 0px 10px 0px 0px #cc9900, 0px -10px 0px #cc9900;
@@ -239,16 +238,15 @@ if (empty($busqueda) == false) {
         }
 
         .pokemon-card img.pkmn-img {
-            width: 130px;
-            height: 130px;
+            width: 165px;
             object-fit: contain;
             background: radial-gradient(circle, #ffffff 30%, #e0e0e0 100%);
-            border-radius: 50%;
+            border-radius: 5%;
             padding: 5px;
-            margin: 0 auto 15px auto;
+            margin: 0 auto 30px auto;
             display: block;
             border: 3px solid #a67300b8;
-            box-shadow: inset 0px -5px 0px 0px rgba(0, 0, 0, 0.15), 0px 5px 10px 0px #a67300;
+            box-shadow: 0px 7px 0px 0px #a67300, 0px 0px 30px 20px #f1fd3b;
             transition: transform 0.3s ease;
         }
 
@@ -276,14 +274,18 @@ if (empty($busqueda) == false) {
             margin-bottom: 20px !important;
             font-size: 25px;
             text-transform: uppercase;
-            background-color: white;
             border-radius: 5px;
             box-shadow: 0px 5px 0px black;
             text-align: center;
             font-weight: 900;
-            text-shadow: 0px 2px 0px black;
-            color: #316eb5;
+            text-shadow: 0px 3px 0px black, 0px 0px 3px #ffffff;
+            color: white;
             border: 1px solid #e2e2e2;
+            background: linear-gradient(0deg, #59a6ff 0%, #316eb5 100%);
+        }
+
+        h3.pkmn-name {
+            padding: 3px 5px 3px 5px;
         }
 
         .pkmn-type {
@@ -360,11 +362,19 @@ if (empty($busqueda) == false) {
             transform: translateY(2px);
             filter: brightness(1.2);
         }
+
+        img.logo-pokedex {
+            display: flex;
+            margin: 0 auto;
+            width: 715px;
+            margin-bottom: -30px;
+            margin-top: -60px;
+        }
     </style>
 </head>
 
 <body>
-<h1 class="titulo-pokedex">Mi Pokédex</h1>
+<img src="assets/img/pokedex-texto.png" alt="Mi Pokédex" class="logo-pokedex">
 
 <?php if (isset($_SESSION['usuario_administrador']) == true): ?>
     <div class="admin-panel">
@@ -420,5 +430,6 @@ if (empty($busqueda) == false) {
     endif;
     ?>
 </div>
+
 </body>
 </html>
