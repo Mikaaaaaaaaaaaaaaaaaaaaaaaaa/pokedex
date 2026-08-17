@@ -27,12 +27,14 @@ CREATE TABLE IF NOT EXISTS pokemon (
 INSERT INTO tipos (nombre, imagen_ruta) VALUES
     ('Planta', 'assets/img/tipos/planta.png'),
     ('Fuego', 'assets/img/tipos/fuego.png'),
-    ('Agua', 'assets/img/tipos/agua.png');
+    ('Agua', 'assets/img/tipos/agua.png'),
+    ('Normal', 'assets/img/tipos/normal.png');
 
 INSERT INTO usuarios (usuario, password)
 VALUES ('administrador', '$2y$10$QoY.D7P7IqH0b.N9W1.z3.H4e.Kz.F6J/w8N9X.Z2g.3tQ.jX.2');
 
 INSERT INTO pokemon (numero, nombre, descripcion, imagen_ruta, tipo_identificador) VALUES
-    (1, 'Bulbasaur', 'Este Pokémon nace con una semilla en el lomo.', 'assets/img/pokemon/001.png', 1),
-    (4, 'Charmander', 'Prefiere los sitios calientes. Dicen que cuando llueve sale vapor de la punta de su cola.', 'assets/img/pokemon/004.png', 2),
-    (7, 'Squirtle', 'Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.', 'assets/img/pokemon/007.png', 3);
+                                                                                       (1, 'Bulbasaur', 'Este Pokémon nace con una semilla en el lomo.', 'assets/img/pokemon/001.png', 1),
+                                                                                       (4, 'Charmander', 'Prefiere los sitios calientes. Dicen que cuando llueve sale vapor de la punta de su cola.', 'assets/img/pokemon/004.png', 2),
+                                                                                       (7, 'Squirtle', 'Cuando retrae su largo cuello en el caparazón, dispara agua a una presión increíble.', 'assets/img/pokemon/007.png', 3),
+                                                                                       (143, 'Snorlax', 'Este Pokémon no hace otra cosa que comer y dormir. A medida que engorda, se vuelve más vago.', 'assets/img/pokemon/143.png', 4);
