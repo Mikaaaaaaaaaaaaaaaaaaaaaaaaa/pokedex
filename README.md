@@ -60,7 +60,11 @@
 
 <div align="center">
 <h2>📸 IMÁGENES DEL JUEGO: 📸</h2>
-<img src="img/1.JPG" alt="Lobby" width="800">
+<img src="img/01.PNG" alt="index" width="800">
+<img src="img/02.PNG" alt="index" width="800">
+<img src="img/03.PNG" alt="index" width="800">
+<img src="img/04.PNG" alt="index" width="800">
+<img src="img/05.PNG" alt="index" width="800">
 </div>
 
 <br>
@@ -68,6 +72,8 @@
 <h2>👥 INTEGRANTES: </h2>
 
 <a href="https://github.com/Mikaaaaaaaaaaaaaaaaaaaaaaaaa" target="_blank">Mikaaaaaaaaaaaaaaaaaaaaaaaaa</a><br>
+
+<br>
 
 <h2>📄 LICENCIA:</h2>
 <p>Proyecto desarrollado con fines académicos para la materia Programación Web 2.</p>
