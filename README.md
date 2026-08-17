@@ -5,9 +5,10 @@
 <div align="left">
 <p>Proyecto práctico desarrollado para la materia <strong>Programación Web 2</strong>.</p>
 
-<p>Pokédex es una aplicación web dinámica e interactiva que representa una Pokédex completa. Permite a los usuarios consultar y buscar información detallada de distintos Pokémon, e incluye un panel de administración restringido con sistema ABM (Alta, Baja y Modificación) persistido en base de datos.</p>
+<p>Pokédex es una aplicación web dinámica e interactiva que representa una Pokédex completa.<br>
+Permite a los usuarios consultar y buscar información detallada de distintos Pokémon, e incluye un panel de administración restringido con sistema ABM (Alta, Baja y Modificación) persistido en base de datos.</p>
 
- <br>
+<br>
    
 <h2>✨ CARACTERÍSTICAS: </h2>
 <p>
