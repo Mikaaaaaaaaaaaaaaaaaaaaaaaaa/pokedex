@@ -50,8 +50,8 @@ $resultado_tipos = $conexion->query($sql_tipos);
         body {
             font-family: 'Montserrat', sans-serif;
             background-image: url(assets/img/fondos/alta-fondo.jpg);
-            min-height: 94vh;
-            padding: 20px;
+            min-height: 95vh;
+			padding: 20px;
             color: #333;
             background-size: cover;
             background-position: center;
@@ -111,7 +111,7 @@ $resultado_tipos = $conexion->query($sql_tipos);
             background-color: #fbacc1;
             padding-bottom: 55px !important;
             padding-top: 0px !important;
-            margin-top: 15px !important;
+            margin-top: 65px !important;
         }
 
         label {
