@@ -92,39 +92,39 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #ffcb05;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
-            background-size: 30px 30px;
-            background-attachment: fixed;
+            background-image: url(assets/img/fondos/modificar-fondo.jpg);
             min-height: 100vh;
+            padding: 20px;
             color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
+            background-size: cover;
+            background-position: center;
         }
 
         .edit-card {
-            background-color: white;
-            border: 3px solid #1c477a;
-            border-radius: 15px;
-            box-shadow: 0px 10px 0px #1c477a, 0px 15px 20px rgb(0 0 0 / 29%);
-            padding: 15px 30px 40px 30px;
             width: 100%;
             max-width: 600px;
+            margin: auto;
+            margin-top: -1px;
+            zoom: 1.1;
+            border-radius: 10px;
+            border: 4px solid #695b0c;
+            box-shadow: 0px 7px 0px #695b0c, 0px 10px 50px 10px #00000085;
+            padding: 35px 40px;
+            background: linear-gradient(180deg, #fad81c 50%, #faeead 70%);
+            background-color: #fad81c;
         }
 
         .edit-card h2 {
-            font-size: 35px;
-            color: #316eb5;
+            color: #fd401f;
+            font-size: 38px;
             text-transform: uppercase;
             font-weight: 900;
             margin-bottom: 25px;
-            text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
-            text-align: center;
+            text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.2), 0.7px 0px 0px white;
+            text-decoration: underline;
+            font-family: 'Montserrat';
         }
 
-        /* Estilo para los mensajes de alerta */
         .alert {
             padding: 15px;
             border-radius: 8px;
@@ -155,19 +155,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         .form-group label {
             font-weight: 700;
             font-size: 17px;
-            color: #555;
+            color: #912512;
             margin-bottom: 5px;
             display: block;
+            text-transform: uppercase;
             font-family: 'Montserrat';
+            text-shadow: 0.5px 0px 0px #912512;
         }
 
-        /* Agrupamos input, textarea y select para que tengan el mismo estilo 3D */
         .form-group input, .form-group textarea, .form-group select {
             width: 100%;
-            border: 2px solid #757575;
+            border: 2px solid #912512;
             border-radius: 7px;
             font-size: 15px;
-            box-shadow: 0px 5px 0px rgb(84 74 74 / 88%);
+            box-shadow: 0px 5px 0px rgb(145 37 18);
             padding: 12px 15px;
             font-family: 'Montserrat', sans-serif;
             font-weight: 600;
@@ -186,7 +187,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: #fff;
         }
 
-        /* Ajuste específico para el textarea para que no se pueda estirar a lo ancho, solo a lo alto */
         .form-group textarea {
             resize: vertical;
             min-height: 100px;
@@ -203,13 +203,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             cursor: pointer;
             text-transform: uppercase;
             font-size: 20px;
-            box-shadow: 0px 5px 0px #1c477a;
+            box-shadow: 0px 5px 0px #912512;
             border: 1px solid #ffffff30;
             text-shadow: 0px 3px 0px black, 0px 0px 15px #ffffffa8;
             margin-top: 10px;
             margin-bottom: -10px;
             transition: transform 0.1s, filter 0.2s;
-            background: linear-gradient(to top, #4b8edb, #316eb5 40%);
+            background: linear-gradient(to bottom, #fd401f 60%, #fd7a64 95%);
         }
 
         .btn-submit:hover {
@@ -217,24 +217,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             filter: brightness(1.1);
         }
 
-        /* Botón de volver usando la "Opción 1" del código anterior */
         .btn-back {
-            /* display: block; */
-            text-align: center;
-            padding: 12px 20px;
-            margin-top: -10px;
-            margin-right: 1590px;
+            padding: 15px;
             text-decoration: none;
             font-weight: 900;
-            font-size: 15px;
+            font-size: 17px;
             color: white;
             text-transform: uppercase;
             border-radius: 7px;
             background: linear-gradient(to bottom, #868e96, #6c757d);
-            box-shadow: 0px 5px 0px 0px #495057;
+            box-shadow: 0px 5px 0px #495057;
             border: 1px solid #ffffff30;
             text-shadow: 0px 2px 0px black, 0px 0px 15px #ffffff9e;
-            transition: transform 0.1s, filter 0.2s;
+            transition: transform 0.1s, filter 0.2s, box-shadow 0.1s;
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            max-width: 255px;
+            margin-top: 35px;
         }
 
         .btn-back:hover {
@@ -245,9 +246,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body style="font-family: Arial, sans-serif;">
-
-<a href="index.php" class="btn-back">⬅ Volver a la Pokédex</a>
-<hr>
 
 <div class="edit-card">
 <h2 style="text-align: center;">Editar a <?= $pokemon['nombre'] ?></h2>
@@ -307,6 +305,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             Guardar Cambios
         </button>
     </form>
+	
+	<a href="index.php" class="btn-back">Volver a la Pokédex</a>
 
 </body>
 </html>
