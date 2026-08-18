@@ -60,7 +60,7 @@ Permite a los usuarios consultar y buscar información detallada de distintos Po
 <br><br>
 
 <div align="center">
-<h2>📸 IMÁGENES DEL JUEGO: 📸</h2>
+<h2>📸 IMÁGENES DE LA POKÉDEX: 📸</h2>
 <img src="img/01.PNG" alt="index" width="800">
 <img src="img/02.PNG" alt="index" width="800">
 <img src="img/03.PNG" alt="index" width="800">
